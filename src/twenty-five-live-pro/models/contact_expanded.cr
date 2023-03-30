@@ -4,15 +4,15 @@ module TwentyFiveLivePro
       include JSON::Serializable
 
       @[JSON::Field(key: "contactId")]
-      property contact_id : Int64
+      property contact_id : Int64?
       @[JSON::Field(key: "etag")]
-      property etag : String
+      property etag : String?
       @[JSON::Field(key: "firstName")]
-      property first_name : String
+      property first_name : String?
       @[JSON::Field(key: "familyName")]
-      property family_name : String
+      property family_name : String?
       @[JSON::Field(key: "email")]
-      property email : String
+      property email : String?
     end
   end
 end
